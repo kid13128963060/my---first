@@ -13,7 +13,6 @@ source_path = [
         '\n', ''),
     r'''C:\Users\Administrator\AppData\Roaming\Ditto\005_211_Ditto!2_数据备份.db
     '''.replace('\n', '')
-
 ]
 
 
