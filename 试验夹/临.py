@@ -29,4 +29,4 @@ dest_dir = [
 # 验证结果（可选）
 print("列表长度：", len(source_path))  # 输出 3，说明包含3个元素
 print("路径字符串：", source_path[1])   # 输出处理后的完整路径（无换行）
-print("路径字符串：", dest_dir[0])   # 输出处理后的完整路径（无换行）
+print("路径字符串：", dest_dir[0])   # 输出处理后的完整路径（无行）
