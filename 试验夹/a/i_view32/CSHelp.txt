@@ -1,0 +1,274 @@
+.topic 1610
+AIF
+Sound file, Audio Interchange Format from Amiga computers.
+.topic 1620
+ANI
+Animated Cursor format for Microsoft Windows.
+.topic 1630
+AU
+Encoded Audio format used by Sun and NeXT machines.
+.topic 1640
+AVI
+Audio Video Interleaved: Microsoft's video format for Windows.
+.topic 1650
+BMP
+Windows Bitmap: The image format Microsoft created for use in Windows.
+.topic 1660
+CAM
+Casio digital camera file.
+.topic 1670
+capture
+To store a part of the monitor screen in memory and turn it into an image, which can be saved and modified just like any other image. Capture utility programs (such as that in IrfanView) let you choose exactly which part of the screen to save.
+.topic 1680
+check-box
+A small square box, usually to the left of some text; clicking the box with the mouse makes a mark appear, showing it as a selected option. The text identifies what the option is for. Often check-boxes appear in groups to allow multiple selections.
+.topic 1690
+clipboard
+An area used by Windows to store various file information for cut/copy/paste operations. For programs that support the clipboard (most do), you can cut or copy from one application and paste into another. An example: an image edited pixel-by-pixel in Windows Paint can be copied to the clipboard, then pasted into IrfanView, from which it can be saved in a variety of formats. (Paint supports only a few file formats.) Each time you cut or copy to the clipboard, it replaces whatever was there before.
+.topic 1700
+CLP
+Windows clipboard format; used to store various types of files for Windows cut/copy/paste operations.
+.topic 1710
+CPT
+CorelDraw Photopaint image, IrfanView can read only older versions, Photopaint 6, 5, etc.
+.topic 1720
+CUR
+Cursor Resource file format for Microsoft Windows; contains image data for cursors used by Windows applications. (Files may contain multiple images plus a directory.)
+.topic 1730
+DAT
+Video CD format; don't confuse this with Windows dat files, which hold information about programs and such.
+.topic 1740
+DCM/ACR/IMA
+Dicom/ACR file format for medical images.
+Note:	DICOM/ACR format hasn't a specific header and IrfanView can't recognize all such images. If you want to read Dicom/ACR images with IrfanView, the file extension MUST BE ".dcm", ".acr" or ".ima".
+.topic 1750
+DCX
+Multipage PCX file format.
+.topic 1760
+dialog
+In Windows, a box that appears when you click a menu item or button. The box will contain items from which you can select, to more accurately perform a function. For example: a files dialog allows you to browse through the files on your hard drive, choose the one you want, and open it.
+.topic 1770
+DIB
+Device Independent Bitmap: another form of BMP, used widely with printers and display devices.
+.topic 1780
+DJVU
+DejaVu image format from AT&T with good compression.
+.topic 1790
+DLL
+Dynamic Link Library; under Windows, a file that can contain portions of a program, to make the program more useful. It can also hold information to help the main program do its job better. Many dll's hold icons that can be opened in IrfanView.
+.topic 1800
+drag
+Pulling the mouse, usually while holding down one of the buttons. This is used to highlight or outline an area, so that some special operation (such as cut or paste) can be performed on the area you select.
+.topic 1810
+EMF
+Enhanced Metafile Format; Microsoft's device independent vector format for Windows.
+.topic 1820
+EPS
+Encapsulated PostScript: mostly used for desktop publishing (DTP); uses the Postscript page description language; these can be used on both PCs and Macs.
+Note:	IrfanView can open only EPSs with a TIFF preview image.
+.topic 1830
+EXE
+Executable file under DOS and Windows. Many exe's contain icons that can be opened in IrfanView.
+.topic 1840
+extension
+The part of a filename that comes after the last dot (.) character. In a filename such as "i_view32.exe" the "exe" is the extension and tells us, this is an executable file - one that performs a function. (In this case, it is the IrfanView program file.) Some common graphics file extensions include .jpg, .gif, and .tif.
+.topic 1850
+fill color
+A color used to fill a large area, as opposed to drawing individual lines. If you see a drawn circle and the inside area of the circle is yellow, yellow is the fill color.
+.topic 1860
+filter
+For images: a small computer program that performs some action on the image, changing it in specific ways. Filters can be used to smooth or roughen an image, correct or remove the color and perform many other editing functions. Most often filters are used to create special effects.
+.topic 1870
+Filter Factory
+A creation tool for image filters. These filters are Photoshop compatible. With filters you can produce an almost endless series of special effects from very tiny changes in the image to complete makeovers. There are thousands of such filters available. Many can be found for free on the internet.
+.topic 1880
+FLI/FLC
+Autodesk animation format.
+.topic 1890
+FPX
+Flashpix format.
+.topic 1910
+G3
+Group 3 Facsimile Apparatus format, used for document transmission.
+.topic 1920
+GIF
+Graphics Interchange Format: The format created by CompuServe for the faster exchange of graphics over modem lines; widely used in Web publishing; can contain animations.
+.topic 1930
+grayscale/greyscale
+Despite the name, grayscale (or greyscale) is actually a mode of color; it uses 256 shades of grey to render an image, producing a richly varied tonal quality; black and white uses just two colors, black with white spacing to render.
+.topic 1940
+ICL
+Icon Library format, used by many icon editing programs; can contain one or many icons for use in other programs.
+.topic 1950
+ICO
+Windows Icon: used by Windows to represent programs and other files.
+.topic 1960
+IFF/LBM
+Interchange File Format: the image format standard for Amiga computers.
+.topic 1970
+image
+The graphics you see on your screen; they can be photographs showing your home town, line drawings showing Mickey Mouse, even the undulating, weird backgrounds you see at many WWW websites. They can range in size from a single dot on your screen (so small it is difficult to see), to huge objects that go off the screen in all directions, causing you to scroll the screen back and forth, up and down, to see them.
+.topic 1980
+IMG
+GEM Raster image, from Atari.
+.topic 1990
+interlaced
+In terms of some image types, such as GIF: an image which builds up on the screen, showing the full image, but of low quality, then gradually building until the full quality image is visible. This allows the user to see some of the image as it builds. This is much the same as progressive.
+.topic 2000
+JP2/JPEG2000
+JPEG 2000 format. The new web standard, using wavelet compression, offers better compression than old JPEG.
+.topic 2010
+JPG/JPEG
+Joint Photographic Experts Group: 24-bit support and fine compression make this format another standard for publishing on the Web.
+.topic 2020
+KDC
+Kodak digital camera format.
+.topic 2030
+landscape
+In reference to printers; printing an image so that it is faced with one long edge of the paper nearest you, as most landscape paintings would be faced. The other standard facing is portrait.
+.topic 2040
+LDF
+LuraDocument Format: wavelet compression image format from LuraTech GmbH, Germany. Format enhanced to improve on JPG and other scanned images, with better quality and more control options.
+Note:	IrfanView can't save images larger than 4096x4096 as LDF and max. 6 pages per LDF image.
+.topic 2050
+LWF
+LuraWave Format: wavelet compression image format from LuraTech GmbH, Germany. Format enhanced to improve on JPG, with better quality and more control options. IrfanView is the first viewer with LWF support.
+Note:	IrfanView can't save images larger than 4096x4096 as LWF.
+.topic 2060
+Mac PICT
+Macintosh PICT format.
+.topic 2070
+maximize
+To "blow up" a program window so that it fills the entire screen. This is useful if the information in the program does not fully display at a smaller screen size.
+.topic 2080
+MED
+MED/OctaMED sound format.
+.topic 2090
+MID
+Musical Instrument Digital Interface (MIDI): a file created with a set of standard formats to instruct electronic musical instruments how to play. With a MIDI player (such as IrfanView), you can play a basic version of the song through the computer's speakers.
+.topic 2100
+minimize
+To remove a program, such as IrfanView, from the screen and have it appear as a button on the task bar at (usually) bottom of the screen. Click the button to restore the program to the screen.
+.topic 2110
+MOV
+QuickTime Movie format; Apple Computer's format for movie and other time-based data file storage.
+Note:	IrfanView uses the MS Active Movie for MOV playing. Active Movie can't play all MOVs, especially many QuickTime-created MOVs. Installation of Apple QuickTime is recommended - see also Properties->Video/Sound in IrfanView.
+.topic 2120
+MP3
+MPEG audio layer 3 format, very popular :-)
+.topic 2130
+MPG/MPEG
+Moving Pictures Experts Group: a standard for full-motion video; provides 352x240 resolution, 30 frames per second and CD-quality sound. Is also used to compress audio without video.
+.topic 2140
+option button
+A small circle, usually to the left of some text. Clicking the circle with the mouse makes a mark appear, showing it as a selected option. The text identifies what the option is for. Option buttons appear in groups, to allow a single selection from many choices; clicking one automatically "unclicks" all the others. Sometimes these groups are known as radio buttons, for their similarity to selecting a station on a radio.
+.topic 2150
+outline
+Highlighting an area you want to work on.
+Put the mouse cursor at one corner of the area you want to outline. Press the left button and hold it. Drag the mouse across and down (or up) to the opposite corner of the area you want outlined. A border appears as you drag the mouse. Release the button when you are done dragging.
+
+This technique is used in such operations as cropping and adding text to an image. If the buttons on your mouse are reversed, use the right button as described above.
+.topic 2160
+PBM
+Portable Bitmap File format; mostly used to convert between various types of bitmap images.
+.topic 2170
+PCX
+PC Paintbrush format from ZSoft Corporation. These images are used by many word-processing and desktop publishing programs.
+.topic 2180
+PGM
+Portable Greymap File format; mostly used to convert between various types of greymap images.
+.topic 2190
+Photo CD
+Digital images from Kodak, presented as "slides" on a CD-ROM. IrfanView can open the overview PCD files too!
+.topic 2200
+pixel
+Picture element: One dot in an image. It is the smallest (practical) element used to make up a picture.
+.topic 2210
+PNG
+Portable Network Graphics: A format that combines the best qualities of gifs and jpgs; used for Web publishing. It is also a very good format for screenshots.
+.topic 2220
+portrait
+In reference to printers; printing an image so that it is faced with one short edge of the paper nearest you, as most portrait paintings would be faced. The other standard facing is landscape.
+.topic 2230
+PPM
+Portable Pixelmap format; mostly used to convert between various types of color images.
+.topic 2240
+progressive
+In terms of some image types, such as JPG: an image which builds up on the screen, showing the full image, but of low quality, then gradually building until the full quality image is visible. This allows the user to see some of the image as it builds. This is much the same as interlaced.
+.topic 2250
+PSD
+PhotoShop Software Development file, used for development with Adobe Photoshop and related software.
+Note:	IrfanView (and other viewers too) can't correct display some PSD files, especially CMYK PSDs.
+.topic 2260
+PSP
+Paint Shop Pro file format from Jasc Software; special graphics format that can describe a multi-layered image in complete detail.
+Note:	IrfanView will display only the first layer (if many) of a PSP image.
+.topic 2270
+QTIF
+QuickTime format.
+.topic 2290
+RealAudio
+RealAudio (*.ra): audio/video format developed by RealNetworks, http://www.real.com. IrfanView plays RA files with the player plugin, please download and install.
+.topic 2280
+RAS/SUN
+Sun Raster: the native bitmap file format for Sun Microsystems workstations.
+.topic 2300
+RLE
+Utah Run Length Encoded image format.
+.topic 2310
+RMI
+MIDI file (MIDI sequence). See also: MID.
+.topic 2320
+SFF
+Structured Fax File.
+.topic 2330
+SFW
+Seattle Film Works format.
+.topic 2340
+SGI/RGB
+Silicon Graphics image format.
+.topic 2350
+slider control
+A control used in Windows to set a value for something. An example: in IrfanView, click on the Image menu, then select Enhance colors. A dialog opens with slider controls. The first slider control allows you to set the value of brightness you want. In the brightness control, the value starts at zero and you can move the slider down to -255 (less bright) or up to +255 (more bright). Click on the line to move the settings more rapidly. Put the mouse directly over the slider, press the left mouse button, hold it and drag the slider to change the settings very rapidly. A fine adjustment allows the input field on the right side of the control. Most slider controls are similar.
+.topic 2360
+SND
+Sun workstation sound file, similar to AU.
+.topic 2370
+sub-menu
+On a Windows menu, an extra menu that "pops up" when you point the mouse at one of the menu choices. This sub-menu gives further control over the choice. An example: on the Image menu, point the mouse at Effects; a sub-menu will appear to let you choose which effect to perform.
+.topic 2380
+SWF
+Macromedia's Shockwave Format.
+.topic 2390
+tabs
+Small extensions at the top of a dialog box; they look like tabs on a file folder; clicking one changes to a different section of the dialog, allowing access to other options.
+.topic 2400
+task bar
+The area of Windows (usually) along the bottom of the screen. This displays various information about Windows' status, such as the clock in the lower right corner. Also shown in the bar are the buttons representing open programs, such as IrfanView. If you minimize a program, you remove it from the screen, but leave it active. Only its button shows, until you click the button to restore it.
+.topic 2410
+TGA
+Truevision Advanced Raster Graphics Adapter (TARGA): Format by Truevision, Inc, used to support image capturing; used with a series of high-resolution graphics adaptors released under the TARGA name.
+.topic 2420
+thumbnail
+A small version of a larger image. Thumbnails are used as "stand-ins" for images where space is a problem. Example: pages on the WWW often use thumbnails to represent images stored at the website. The thumbnails take a fraction of the time to load that the large images would take. Usually, the thumbnail is linked to the large image, so that a click on it will load the full-sized version.
+.topic 2430
+TIF/TIFF
+Tagged Image File Format: a widely used raster format, jointly supported by Aldus; used mostly in desktop publishing; can be viewed on both Macs and PCs; this is the format used by most fax machines.
+.topic 2440
+transparent color
+One color in an image that does not show on screen. This is most often used to allow an image background to be invisible against other colors. An example would be a company logo used on an internet web page; a transparent background color would allow it to be placed directly over other images on the page, and all will still be visible.
+.topic 2450
+WAV
+Windows audio file; they take up a lot of space, but can serve as a go-between for converting between some of the other sound formats.
+.topic 2460
+WBMP
+WAP Bitmap format.
+.topic 2470
+WMF
+Windows MetaFile format; Microsoft vector graphics file, more compact and portable than bmp images.
+.topic 2480
+XBM
+X11 Bitmap.
+.topic 2490
+XPM
+X11 Pixmap.
