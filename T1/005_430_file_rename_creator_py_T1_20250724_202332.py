@@ -54,7 +54,7 @@ def get_last_active_explorer_path(path=None):
 
 
 def generate_filename(prefix="", lang="", version="", year="", month="", day="", source_name=None, is_folder=False):
-    """生成标准化文件名（修复version自动加点逻辑，区分文件/文件夹）"""
+    """生成标准化文件名(修复version自动加点逻辑,区分文件/文件夹）"""
     # 从源文件提取语言标识（优先于参数）
     if source_name and not lang:
         base_name = os.path.basename(source_name)
