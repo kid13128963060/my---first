@@ -1,11 +1,11 @@
 import win32com.client
 import time
-import pythoncom  # 新增，用于处理 COM 线程模型
-import subprocess
+import pythoncom
+import time
 
 
 def force_save_and_close_all_word():
-    """强制保存并关闭所有打开的Word文档（不显示保存对话框）"""
+    """强制保存并关闭所有打开的Word文档(不显示保存对话框）"""
     # 初始化 Word 应用对象
     word_app = None
     try:
@@ -33,7 +33,7 @@ def force_save_and_close_all_word():
                 doc = word_app.Documents(i)
                 # 强制保存（-1 表示 wdSaveChanges，即保存更改  0 表示不保存，2 表示提示保存  ）
                 doc.Close(SaveChanges=-1)
-                print(f"已强制保存并关闭: {doc.Name}")
+                print(f"已强制保存并关闭 Word 文档: {doc.Name}")
                 time.sleep(0.3)  # 短暂延迟确保操作完成
             except Exception as doc_e:
                 print(
@@ -55,22 +55,6 @@ def force_save_and_close_all_word():
             del word_app
         pythoncom.CoUninitialize()  # 释放 COM 线程初始化
 
-
-# 执行关机操作
-try:
-    # 设置关机倒计时（秒）
-    shutdown_delay = 80
-    print(f"将在{shutdown_delay}秒后关机...")
-    print("若要取消关机，请打开命令提示符并输入:shutdown /a")
-
-    # 执行关机命令
-    subprocess.run(
-        f"shutdown /s /t {shutdown_delay}",
-        shell=True,
-        check=True
-    )
-except subprocess.CalledProcessError as e:
-    print(f"关机命令执行失败：{str(e)}")
 
 if __name__ == "__main__":
     force_save_and_close_all_word()
