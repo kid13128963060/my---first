@@ -1,0 +1,7 @@
+print('hello world')
+print('hello', 'world')
+character = input('input your character:')
+print(character)
+x = input("first: ")
+y = input("second: ")
+print(x + y)
