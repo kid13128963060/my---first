@@ -119,5 +119,3 @@ def force_save_and_close_notepad():
 if __name__ == "__main__":
     close_all_word_documents()
     force_save_and_close_notepad()  # 此时系统资源已释放，记事本处理不受干扰
-    print("测试同步")
-    print("所有操作已完成")
