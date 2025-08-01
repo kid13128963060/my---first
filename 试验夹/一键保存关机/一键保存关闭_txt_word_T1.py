@@ -117,5 +117,6 @@ def force_save_and_close_notepad():
 
 
 if __name__ == "__main__":
+    print("开始处理Word文档...")
     close_all_word_documents()
     force_save_and_close_notepad()  # 此时系统资源已释放，记事本处理不受干扰
