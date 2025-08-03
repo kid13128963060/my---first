@@ -2,12 +2,10 @@ import win32com.client
 import win32gui
 import win32con
 import win32api
-import win32process
 import psutil
 import time
 import pythoncom
 import subprocess
-import threading  # 新增：确保线程独立性
 
 
 def close_all_word_documents():
@@ -92,19 +90,19 @@ def force_save_and_close_notepad():
             # 清空撤销缓冲区，避免关闭提示
             edit_hwnd = win32gui.FindWindowEx(hwnd, None, "Edit", None)
             if edit_hwnd:
-                win32gui.SendMessage(
+                win32api.SendMessage(
                     edit_hwnd, win32con.EM_EMPTYUNDOBUFFER, 0, 0)
-                win32gui.SendMessage(edit_hwnd, win32con.EM_SETMODIFY, 0, 0)
+                win32api.SendMessage(edit_hwnd, win32con.EM_SETMODIFY, 0, 0)
                 time.sleep(0.3)
 
             # 关键修复4：增强关闭逻辑（先发送关闭消息，再检查是否真的关闭）
             # 发送WM_CLOSE
-            win32gui.SendMessage(hwnd, win32con.WM_CLOSE, 0, 0)
+            win32api.SendMessage(hwnd, win32con.WM_CLOSE, 0, 0)
             time.sleep(0.5)  # 等待关闭响应
             # 检查窗口是否仍存在
             if win32gui.IsWindow(hwnd):
                 # 强制终止进程
-                _, pid = win32process.GetWindowThreadProcessId(hwnd)
+                pid = win32api.GetWindowThreadProcessId(hwnd)[1]
                 p = psutil.Process(pid)
                 p.terminate()
                 print(f"记事本窗口未响应，已强制终止进程 {pid}")
@@ -118,16 +116,12 @@ def force_save_and_close_notepad():
     print(f"已处理 {len(txt_hwnds)} 个记事本窗口")
 
 
-if __name__ == "__main__":
-    print("开始处理Word文档...")
-    close_all_word_documents()
-    force_save_and_close_notepad()  # 此时系统资源已释放，记事本处理不受干扰
-
+def shutdown_system():
     # 执行关机操作
     try:
         # 设置关机倒计时（秒）
         shutdown_delay = 80
-        print(f"将在{shutdown_delay}秒后关机...")
+        print(f"\n将在{shutdown_delay}秒后关机...")
         print("若要取消关机，请打开命令提示符并输入：shutdown /a")
 
         # 执行关机命令
@@ -137,4 +131,16 @@ if __name__ == "__main__":
             check=True
         )
     except subprocess.CalledProcessError as e:
-        print(f"执行关机命令时出错: {e}")
+        print(f"关机命令执行失败：{str(e)}")
+
+
+if __name__ == "__main__":
+    print("开始处理Word文档...")
+    close_all_word_documents()
+
+    print("\n开始处理记事本窗口...")
+    force_save_and_close_notepad()
+
+    shutdown_system()
+
+    print("\n所有操作已完成")
