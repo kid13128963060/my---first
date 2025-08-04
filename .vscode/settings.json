@@ -1,2 +1,7 @@
 {
+<<<<<<< HEAD
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
+=======
+>>>>>>> dcb2bd4413adc8b529063e4a9adb64a4d0dc99e9
 }
