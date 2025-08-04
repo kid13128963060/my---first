@@ -82,9 +82,9 @@ class AccountingBook:
     """记账本核心类"""
 
     def __init__(self):
-        # QPython适配：使用更适合手机的路径
+        # 修改数据文件路径为与程序相同目录
         self.data_file = os.path.join(
-            os.path.expanduser("~"), "accounting_data.json")
+            os.path.dirname(os.path.abspath(__file__)), "accounting_data.json")
         self.transactions: List[Transaction] = []
         self.category_manager = CategoryManager()
         self.load_data()
@@ -462,5 +462,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-print("测试推送")
-print("测试推送2")
