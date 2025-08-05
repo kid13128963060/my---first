@@ -1,52 +1,25 @@
-<<<<<<< HEAD
-# ÉèÖÃÔ´ÎÄ¼þ¼ÐºÍÄ¿±êÎÄ¼þ¼ÐÂ·¾¶
-$source = "E:\±¸·ÝÅÌ\8000-´óÎÄ¼þ¼Ð\009-±¸·ÝÎÄ¼þ¼Ð-×Ô\005-209-Listary!2-ÉèÖÃ\×Ô¶¨ÒåÉèÖÃ"
+# ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ä¼ï¿½ï¿½Ðºï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+$source = "E:\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\8000-ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½\009-ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½-ï¿½ï¿½\005-209-Listary!2-ï¿½ï¿½ï¿½ï¿½\ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 $destination = "C:\Users\Administrator\AppData\Roaming\Listary\UserProfile\Settings\"
 
-# ¼ì²éÔ´ÎÄ¼þ¼ÐÊÇ·ñ´æÔÚ
+# ï¿½ï¿½ï¿½Ô´ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 if (-not (Test-Path -Path $source -PathType Container)) {
-    Write-Error "Ô´ÎÄ¼þ¼Ð²»´æÔÚ: $source"
+    Write-Error "Ô´ï¿½Ä¼ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½: $source"
     exit 1
 }
 
-# ¼ì²éÄ¿±êÎÄ¼þ¼ÐÊÇ·ñ´æÔÚ£¬Èç¹û²»´æÔÚÔò´´½¨
+# ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò´´½ï¿½
 if (-not (Test-Path -Path $destination -PathType Container)) {
     New-Item -ItemType Directory -Path $destination | Out-Null
-    Write-Host "ÒÑ´´½¨Ä¿±êÎÄ¼þ¼Ð: $destination"
+    Write-Host "ï¿½Ñ´ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½: $destination"
 }
 
 try {
-    # µÝ¹é¸´ÖÆÄ¿Â¼¼°ÎÄ¼þ£¬±£ÁôÎÄ¼þ½á¹¹
+    # ï¿½Ý¹é¸´ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½á¹¹
     Copy-Item -Path "$source\*" -Destination $destination -Recurse -Force -ErrorAction Stop
-    Write-Host "¸´ÖÆÍê³É£¡Ô´Ä¿Â¼: $source µ½ Ä¿±êÄ¿Â¼: $destination"
+    Write-Host "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½Ô´Ä¿Â¼: $source ï¿½ï¿½ Ä¿ï¿½ï¿½Ä¿Â¼: $destination"
 }
 catch {
-    Write-Error "¸´ÖÆ¹ý³ÌÖÐ·¢Éú´íÎó: $_"
+    Write-Error "ï¿½ï¿½ï¿½Æ¹ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: $_"
     exit 2
-=======
-# ÉèÖÃÔ´ÎÄ¼þ¼ÐºÍÄ¿±êÎÄ¼þ¼ÐÂ·¾¶
-$source = "E:\±¸·ÝÅÌ\8000-´óÎÄ¼þ¼Ð\009-±¸·ÝÎÄ¼þ¼Ð-×Ô\005-209-Listary!2-ÉèÖÃ\×Ô¶¨ÒåÉèÖÃ"
-$destination = "C:\Users\Administrator\AppData\Roaming\Listary\UserProfile\Settings\"
-
-# ¼ì²éÔ´ÎÄ¼þ¼ÐÊÇ·ñ´æÔÚ
-if (-not (Test-Path -Path $source -PathType Container)) {
-    Write-Error "Ô´ÎÄ¼þ¼Ð²»´æÔÚ: $source"
-    exit 1
-}
-
-# ¼ì²éÄ¿±êÎÄ¼þ¼ÐÊÇ·ñ´æÔÚ£¬Èç¹û²»´æÔÚÔò´´½¨
-if (-not (Test-Path -Path $destination -PathType Container)) {
-    New-Item -ItemType Directory -Path $destination | Out-Null
-    Write-Host "ÒÑ´´½¨Ä¿±êÎÄ¼þ¼Ð: $destination"
-}
-
-try {
-    # µÝ¹é¸´ÖÆÄ¿Â¼¼°ÎÄ¼þ£¬±£ÁôÎÄ¼þ½á¹¹
-    Copy-Item -Path "$source\*" -Destination $destination -Recurse -Force -ErrorAction Stop
-    Write-Host "¸´ÖÆÍê³É£¡Ô´Ä¿Â¼: $source µ½ Ä¿±êÄ¿Â¼: $destination"
-}
-catch {
-    Write-Error "¸´ÖÆ¹ý³ÌÖÐ·¢Éú´íÎó: $_"
-    exit 2
->>>>>>> dcb2bd4413adc8b529063e4a9adb64a4d0dc99e9
 }
