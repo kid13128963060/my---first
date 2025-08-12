@@ -1,0 +1,2 @@
+要验证 Git 的用户名和邮箱配置是否成功，可在 Git Bash（或终端）执行以下命令：
+git config --global --list
