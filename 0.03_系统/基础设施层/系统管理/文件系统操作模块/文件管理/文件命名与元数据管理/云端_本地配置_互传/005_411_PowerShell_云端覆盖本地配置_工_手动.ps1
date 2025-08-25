@@ -1,6 +1,4 @@
 ﻿
-$choice = Read-Host "确定要云端覆盖本地配置吗？请输入 [Y/N]"
-if ($choice -eq "Y" -or $choice -eq "y") {
 # 关闭多个应用程序
     Stop-Process -Name "Listary", "i_view64", "Ditto" -Force
     Start-Sleep -Seconds 7
@@ -20,8 +18,3 @@ if ($choice -eq "Y" -or $choice -eq "y") {
     New-Item -Path "E:\备份盘\带零文件夹\005_计算机科学、程式、资料,硬件\005_400_电脑编程_1\同步成功提示文件.txt"
 
     Write-Host "执行云端覆盖本地配置操作ok"
-} elseif ($choice -eq "N" -or $choice -eq "n") {
-    Write-Host "已取消云端覆盖本地配置操作"
-} else {
-    Write-Host "输入无效，请按要求输入 Y/N"
-}
